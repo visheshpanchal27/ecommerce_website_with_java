@@ -1,0 +1,158 @@
+/* General Body Styles */
+body {
+    background-image: url('emm.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color for better contrast */
+}
+
+/* Centering the form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    background: #fff; /* White background for form */
+    padding: 30px 20px;
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    width: 100%;
+    max-width: 350px; /* Ensure responsiveness */
+    text-align: center;
+}
+
+/* Label and input field styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600; /* Slightly bold for better visibility */
+    color: #555; /* Softer text color */
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Softer border color */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #007bff; /* Highlighted border on focus */
+    outline: none;
+}
+
+/* Password toggle icon styles */
+.password-field {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #333; /* Slightly darker icon on hover */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: 600; /* Bold text for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
+/* Account Container */
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* Account Details Container */
+.account-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center; /* Center align text inside */
+}
+
+.account-details-container ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.account-details-container li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.account-details-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form, .account-details-container {
+        padding: 20px 15px;
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

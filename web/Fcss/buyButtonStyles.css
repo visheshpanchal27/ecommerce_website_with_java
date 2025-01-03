@@ -1,0 +1,34 @@
+/* buyButtonStyles.css */
+.buy-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff5722; /* Bright orange background */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none; /* Remove the default button border */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.buy-now-btn:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+.clear-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f44336; /* Red background */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none; /* Remove the default button border */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.clear-cart-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
